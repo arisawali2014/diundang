@@ -68,7 +68,7 @@
     <script src="{{ asset('js/app.js') }}" type="module" defer></script>
 </head>
 
-<body data-key="1|WryUz2ZIeJlVARaGWZwOjfMseG1ZPY6RKfCm8KZz7a2ad25f" data-url="{{ url('/') }}" style="overflow-y: hidden;">
+<body data-key="1|ngKqqCdengQmgu4mZAY8TFV9NOd2JWdf1Vl6h42j73e0b6e4" data-url="{{ url('/') }}" style="overflow-y: hidden;">
 
     <!-- Navbar Bottom -->
     <nav class="navbar bg-dark navbar-expand fixed-bottom rounded-top-4 p-0" id="navbar-menu">
