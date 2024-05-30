@@ -3,41 +3,6 @@ import { request, HTTP_GET, HTTP_PATCH, HTTP_PUT } from "./request.js";
 import { storage } from "./storage.js";
 
 // Sample data
-const data = {
-    data: [
-        {
-            amount: 100000,
-            currency: "IDR",
-            donator: "OB Berkelas",
-            is_user: false,
-        },
-        {
-            amount: 50000,
-            currency: "IDR",
-            donator: "BANG JEFF",
-            is_user: false,
-        },
-        {
-            amount: 35000,
-            currency: "IDR",
-            donator: "aisyahf",
-            is_user: true,
-        },
-        {
-            amount: 25000,
-            currency: "IDR",
-            donator: "Isfa",
-            is_user: false,
-        },
-        {
-            amount: 10000,
-            currency: "IDR",
-            donator: "AlfiFirdaus",
-            is_user: true,
-        },
-    ],
-};
-
 export const saweria = (() => {
     const session = storage("session");
     const renderLoading = () => {
@@ -66,7 +31,7 @@ export const saweria = (() => {
     };
     const renderLeaderboard = async () => {
         renderLoading();
-        await await request(HTTP_GET, `/api/saweria/leaderboard?range=week`)
+        await await request(HTTP_GET, `/api/saweria/leaderboard?range=all`)
             .token(session.get("token"))
             .then((res) => {
                 if (res.code === 200) {
