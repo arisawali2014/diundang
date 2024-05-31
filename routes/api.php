@@ -54,7 +54,7 @@ Route::middleware('auth:sanctum')->group(function () {
             $data = json_decode($response, true);
 
             return response()->json([
-                'data' => $data['data'],
+                'data' => $data,
                 'code' => 200
             ]);
         });

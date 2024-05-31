@@ -204,7 +204,7 @@ export const util = (() => {
         if (status === 200) {
             animation();
             comment.comment();
-            saweria.renderLeaderboard();
+            // saweria.renderLeaderboard();
         }
     };
 
