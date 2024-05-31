@@ -130,7 +130,7 @@ class CommentController extends Controller
     public function delete($uuid, Request $request)
     {
         $comment = Comment::where('own', $uuid)->first();
-        $comment->destroy();
+        $comment->delete();
         return response()->json([
             'status'    => 'OK',
             'data'  => ['status' => true],
