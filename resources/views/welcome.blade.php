@@ -454,13 +454,13 @@
             </div>
         </div>
 
-        <div class="container">
+        {{-- <div class="container">
             <div class="card-body border rounded-4 shadow p-3">
                 <h1 class="font-esthetic text-center mb-3" style="font-size: 3rem;">Daftar Hadiah</h1>
                 <p class="text-center">Data diambil dari <a href="https://saweria.co/arisawalii" target="_blank">saweria</a></p>
                 <div class="my-3 pt-3 row row-cols-3 row-cols-md-5" id="saweria-leaderboard"></div>
             </div>
-        </div>
+        </div> --}}
 
         <!-- Comments -->
         <section class="m-0 px-0 pb-0 pt-3" id="ucapan">
